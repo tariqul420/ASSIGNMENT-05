@@ -21,13 +21,13 @@
     <nav class="bg-nav-bar sticky top-0">
       <section class="flex justify-between m-auto py-9 w-11/12">
         <div>
-          <button class="bg-primary p-[12px_32px_12px_32px] rounded-lg text-dark-01 font-semibold">Blog</button>
+          <button class="bg-primary md:p-[12px_32px_12px_32px] p-[5px_20px_5px_20px]  rounded-lg text-dark-01 font-semibold">Blog</button>
         </div>
         <div class="flex items-center gap-4">
           <img src="assets/logo.png" alt="Logo" />
-          <p class="text-dark-01 font-semibold">Donate Bangladesh</p>
+          <p class="text-dark-01 font-semibold max-sm:hidden">Donate Bangladesh</p>
         </div>
-        <div class="flex items-center gap-4">
+        <div class="flex items-center gap-1 sm:gap-4">
           <img src="assets/coin.png" alt="Coin" />
           <p class="text-dark-02 font-medium"><span>5500</span> BDT</p>
         </div>
@@ -35,27 +35,27 @@
     </nav>
 
     <!-- ? main button section start hear -->
-    <section class="flex justify-center gap-4 mt-20">
+    <section class="flex justify-center gap-4 mt-8">
       <div>
-        <button class="bg-primary p-[12px_32px_12px_32px] rounded-lg text-dark-01 font-semibold">Donation</button>
+        <button id="donate-btn" class="bg-primary p-[12px_32px_12px_32px] rounded-lg text-dark-01 font-semibold">Donation</button>
       </div>
       <div>
-        <button class="border-2 border-solid border-dark-03 p-[10px_30px_10px_30px] rounded-lg text-dark-02 font-semibold">History</button>
+        <button id="history-btn" class="border-2 border-solid border-dark-03 p-[10px_30px_10px_30px] rounded-lg text-dark-02 font-semibold">History</button>
       </div>
     </section>
 
     <!-- todo main section start hear -->
     <main>
       <!-- done section no 1 -->
-      <section class="flex gap-8 p-8 border border-solid border-[rgba(17, 17, 17, 0.1)] w-10/12 m-auto rounded-2xl mt-8">
+      <section class="flex flex-col lg:flex-row gap-8 p-4 md:p-8 border border-solid border-[rgba(17, 17, 17, 0.1)] w-11/12 m-auto rounded-2xl mt-8 lg:w-10/12">
         <div class="flex-1">
-          <img src="assets/noakhali.png" />
+          <img class="w-full" src="assets/noakhali.png" />
         </div>
-        <div class="flex-1 flex flex-col justify-between">
-          <button class="w-[125px] justify-center flex gap-4 items-center bg-primary p-[10px_16px_10px_16px] rounded-lg text-dark-02 font-semibold bg-button">
+        <div class="flex-1 flex flex-col justify-between space-y-4">
+          <div class="w-[160px] justify-center flex gap-2 items-center bg-primary p-[10px_16px_10px_16px] rounded-lg text-dark-02 font-semibold bg-button">
             <img src="assets/coin.png" alt="Coin" />
             <p><span>0</span> BDT</p>
-          </button>
+          </div>
           <h2 class="text-dark-01 text-xl font-bold">Donate for Flood at Noakhali, Bangladesh</h2>
           <p class="text-dark-02 font-medium">
             The recent floods in Noakhali have caused significant damage to homes infrastructure. Your donation will help provide essential supplies and to those affected by this disaster. Every
@@ -67,15 +67,15 @@
       </section>
 
       <!-- done section no 2 -->
-      <section class="flex gap-8 p-8 border border-solid border-[rgba(17, 17, 17, 0.1)] w-10/12 m-auto rounded-2xl mt-8">
+      <section class="flex flex-col lg:flex-row gap-8 p-4 md:p-8 border border-solid border-[rgba(17, 17, 17, 0.1)] w-11/12 m-auto rounded-2xl mt-8 lg:w-10/12">
         <div class="flex-1">
-          <img src="assets/feni.png" />
+          <img class="w-full" src="assets/feni.png" />
         </div>
-        <div class="flex-1 flex flex-col justify-between">
-          <button class="w-[145px] justify-center flex gap-4 items-center bg-primary p-[10px_16px_10px_16px] rounded-lg text-dark-02 font-semibold bg-button">
+        <div class="flex-1 flex flex-col justify-between space-y-4">
+          <div class="w-[160px] justify-center flex gap-2 items-center bg-primary p-[10px_16px_10px_16px] rounded-lg text-dark-02 font-semibold bg-button">
             <img src="assets/coin.png" alt="Coin" />
             <p><span>600</span> BDT</p>
-          </button>
+          </div>
           <h2 class="text-dark-01 text-xl font-bold">Donate for Flood Relief in Feni,Bangladesh</h2>
           <p class="text-dark-02 font-medium">
             The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and
@@ -88,19 +88,18 @@
       </section>
 
       <!-- done section no 3 -->
-      <section class="flex gap-8 p-8 border border-solid border-[rgba(17, 17, 17, 0.1)] w-10/12 m-auto rounded-2xl mt-8">
+      <section class="flex flex-col lg:flex-row gap-8 p-4 md:p-8 border border-solid border-[rgba(17, 17, 17, 0.1)] w-11/12 m-auto rounded-2xl mt-8 lg:w-10/12">
         <div class="flex-1">
-          <img src="assets/quota-protest.png" />
+          <img class="w-full" src="assets/quota-protest.png" />
         </div>
-        <div class="flex-1 flex flex-col justify-between">
-          <button class="w-[160px] justify-center flex gap-4 items-center bg-primary p-[10px_16px_10px_16px] rounded-lg text-dark-02 font-semibold bg-button">
+        <div class="flex-1 flex flex-col justify-between space-y-4">
+          <div class="w-[160px] justify-center flex gap-2 items-center bg-primary p-[10px_16px_10px_16px] rounded-lg text-dark-02 font-semibold bg-button">
             <img src="assets/coin.png" alt="Coin" />
             <p><span>2400</span> BDT</p>
-          </button>
-          <h2 class="text-dark-01 text-xl font-bold">Donate for Flood at Noakhali, Bangladesh</h2>
+          </div>
+          <h2 class="text-dark-01 text-xl font-bold">Aid for Injured in the Quota Movement</h2>
           <p class="text-dark-02 font-medium">
-            The recent floods in Noakhali have caused significant damage to homes infrastructure. Your donation will help provide essential supplies and to those affected by this disaster. Every
-            contribution, big or small, makes difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.
+            The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.
           </p>
           <input type="text" placeholder="Write Donation Amount" class="input input-bordered focus:outline-none" />
           <button class="btn btn-outline w-full bg-primary border-none text-dark-01 font-semibold text-xl">Donate Now</button>
@@ -115,7 +114,7 @@
         <p class="text-dark-02 font-medium">Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)</p>
       </div>
     </section>
-    
+
     <script src="js/common.js"></script>
     <script src="js/script.js"></script>
   </body>
