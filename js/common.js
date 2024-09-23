@@ -20,7 +20,7 @@ function MainCommonFunction(inputId, donateId, location) {
   let mainNum = parseFloat(mainAmount);
 
   if (inputNum > mainNum) {
-    alert("Donation amount exceeds the available balance.");
+    alert("There is no money in your account.");
     return;
   }
 

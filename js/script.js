@@ -36,7 +36,7 @@ historyBtn.addEventListener("click", function () {
 document.getElementById("btn-noakhali").addEventListener("click", function (event) {
   event.preventDefault;
 
-  MainCommonFunction("input-noakhali", 'donate-noakhali', 'Flood at Noakhali, Bangladesh');
+  MainCommonFunction("input-noakhali", 'donate-noakhali', 'Food at Noakhali, Bangladesh');
 
   document.getElementById("input-noakhali").value = "";
 });
@@ -45,7 +45,7 @@ document.getElementById("btn-noakhali").addEventListener("click", function (even
 document.getElementById("btn-fani").addEventListener("click", function (event) {
   event.preventDefault;
 
-  MainCommonFunction("input-fani", 'donate-fani' , 'Flood Relief in Feni,Bangladesh');
+  MainCommonFunction("input-fani", 'donate-fani' , 'Food Relief in Feni,Bangladesh');
 
   document.getElementById("input-fani").value = "";
 });
@@ -57,4 +57,11 @@ document.getElementById("btn-quota").addEventListener("click", function (event) 
   MainCommonFunction("input-quota", 'donate-quota', 'Aid for Injured in the Quota Movement, Bangladesh');
 
   document.getElementById("input-quota").value = "";
+});
+
+
+const blogBtn = document.getElementById("blog-button");
+
+blogBtn.addEventListener('click',function(){
+  window.location.href = '../blog.html'
 });
