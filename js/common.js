@@ -52,5 +52,5 @@ function MainCommonFunction(inputId, donateId, location) {
     historyContainer.insertBefore(div, historyContainer.firstChild);
   } else {
     historyContainer.appendChild(div);
-  }  
+  }
 }

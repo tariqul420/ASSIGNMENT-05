@@ -31,12 +31,11 @@ historyBtn.addEventListener("click", function () {
   historyAllEl.classList.remove("hidden");
 });
 
-
 // done donate for noakhali
 document.getElementById("btn-noakhali").addEventListener("click", function (event) {
   event.preventDefault;
 
-  MainCommonFunction("input-noakhali", 'donate-noakhali', 'Food at Noakhali, Bangladesh');
+  MainCommonFunction("input-noakhali", "donate-noakhali", "Flood at Noakhali, Bangladesh");
 
   document.getElementById("input-noakhali").value = "";
 });
@@ -45,23 +44,31 @@ document.getElementById("btn-noakhali").addEventListener("click", function (even
 document.getElementById("btn-fani").addEventListener("click", function (event) {
   event.preventDefault;
 
-  MainCommonFunction("input-fani", 'donate-fani' , 'Food Relief in Feni,Bangladesh');
+  MainCommonFunction("input-fani", "donate-fani", "Flood Relief in Feni,Bangladesh");
 
   document.getElementById("input-fani").value = "";
+});
+
+// done donate for feni
+document.getElementById("btn-cumilla").addEventListener("click", function (event) {
+  event.preventDefault;
+
+  MainCommonFunction("input-cumilla", "donate-cumilla", "Flood Relief in Cumilla,Bangladesh");
+
+  document.getElementById("input-cumilla").value = "";
 });
 
 // done donate for Quota Movement
 document.getElementById("btn-quota").addEventListener("click", function (event) {
   event.preventDefault;
 
-  MainCommonFunction("input-quota", 'donate-quota', 'Aid for Injured in the Quota Movement, Bangladesh');
+  MainCommonFunction("input-quota", "donate-quota", "Aid for Injured in the Quota Movement, Bangladesh");
 
   document.getElementById("input-quota").value = "";
 });
 
-
 const blogBtn = document.getElementById("blog-button");
 
-blogBtn.addEventListener('click',function(){
-  window.location.href = `ASSIGNMENT-05/../blog.html`
+blogBtn.addEventListener("click", function () {
+  window.location.href = `ASSIGNMENT-05/../blog.html`;
 });
