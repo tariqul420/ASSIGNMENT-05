@@ -63,5 +63,5 @@ document.getElementById("btn-quota").addEventListener("click", function (event) 
 const blogBtn = document.getElementById("blog-button");
 
 blogBtn.addEventListener('click',function(){
-  window.location.href = '../blog.html'
+  window.location.href = `ASSIGNMENT-05/../blog.html`
 });
