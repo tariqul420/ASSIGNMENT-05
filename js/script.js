@@ -19,7 +19,6 @@ donateBtn.addEventListener("click", function () {
 
 historyBtn.addEventListener("click", function () {
   donateBtn.classList.remove("bg-primary", "p-[12px_32px_12px_32px]", "text-dark-01");
-  console.log("donate");
 
   donateBtn.classList.add("border-2", "border-solid", "border-dark-03", "p-[10px_30px_10px_30px]", "text-dark-02");
 
@@ -32,9 +31,30 @@ historyBtn.addEventListener("click", function () {
   historyAllEl.classList.remove("hidden");
 });
 
-// done donate fot noakhali
-document.getElementById("donate-btn-noakhali").addEventListener("click", function () {
-  inputValue("donate-input-noakhali");
 
-  common("donate-input-noakhali", 'donate-amount')
+// done donate for noakhali
+document.getElementById("btn-noakhali").addEventListener("click", function (event) {
+  event.preventDefault;
+
+  MainCommonFunction("input-noakhali", 'donate-noakhali', 'Flood at Noakhali, Bangladesh');
+
+  document.getElementById("input-noakhali").value = "";
+});
+
+// done donate for feni
+document.getElementById("btn-fani").addEventListener("click", function (event) {
+  event.preventDefault;
+
+  MainCommonFunction("input-fani", 'donate-fani' , 'Flood Relief in Feni,Bangladesh');
+
+  document.getElementById("input-fani").value = "";
+});
+
+// done donate for Quota Movement
+document.getElementById("btn-quota").addEventListener("click", function (event) {
+  event.preventDefault;
+
+  MainCommonFunction("input-quota", 'donate-quota', 'Aid for Injured in the Quota Movement, Bangladesh');
+
+  document.getElementById("input-quota").value = "";
 });
